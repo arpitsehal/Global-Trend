@@ -32,7 +32,7 @@ const TaskList = () => {
 
   useEffect(() => {
     fetchTasks();
-  }, [filters]);
+  }, [filters, fetchTasks]);
 
   const fetchTasks = async () => {
     try {

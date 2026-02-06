@@ -25,7 +25,7 @@ const TaskForm = () => {
     if (isEditing) {
       fetchTask();
     }
-  }, [id, isEditing]);
+  }, [id, isEditing, fetchTask]);
 
   const fetchTask = async () => {
     try {
